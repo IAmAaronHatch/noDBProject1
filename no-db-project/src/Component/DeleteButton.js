@@ -1,7 +1,7 @@
 import React from 'react'
 
-function DeleteButton=()=>{
+// function deleteButton = ()=>{
 
-}
+// }
 
-export default DeleteButton
+// export default DeleteButton
