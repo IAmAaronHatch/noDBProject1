@@ -4,11 +4,20 @@ import axios from 'axios'
 
 
 class App extends Component {
+  constructor(){
+    super ();
+
+    this.state = {
+      pokemon: []
+    }
+  }
 
   render() {
     return (
       <div className="App">
-        <h1>Hello World</h1>
+        <h1>Welcome!</h1>
+        <h2>Can you defeat Red?</h2>
+        <image/>
       </div>
     );
   }
