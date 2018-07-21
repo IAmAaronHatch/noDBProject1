@@ -1,7 +1,11 @@
+
 import React from 'react'
 
-// function deleteButton = ()=>{
 
-// }
+function DeleteButton (props) {
+    return (
+        <button onClick = { () => props.deletePokemon(props.id)}>Delete</button>
+    )
+}
 
-// export default DeleteButton
+export default DeleteButton
