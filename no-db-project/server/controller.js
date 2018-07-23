@@ -15,7 +15,7 @@ let pokemon = require('./pokemonController')
     //possibly add a moveset (to attack?)
 // ]
 
-let id = 1
+let id = 3
 //Could change this to 7? If I add a battle against "Red"
 
 module.exports = {
