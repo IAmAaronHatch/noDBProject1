@@ -1,19 +1,19 @@
+let pokemon = require('./pokemonController')
 
+// let pokemon = [
 
-let pokemon = [
-
-    {
-        id: 0,
-        name: 'Pikachu',
-        lvl: 81,
-        hp: 300,
-        attack: 100,
-        sprite: <img scr = {require('../src/sprites/pikachu.gif')} />
+    // {
+    //     id: 0,
+    //     name: 'Pikachu',
+    //     lvl: 81,
+    //     hp: 300,
+    //     attack: 100,
+    //     sprite: 'http://www.pokestadium.com/sprites/black-white/animated/pikachu.gif'
        
-    },
+    // },
 
     //possibly add a moveset (to attack?)
-]
+// ]
 
 let id = 1
 //Could change this to 7? If I add a battle against "Red"
@@ -25,15 +25,17 @@ module.exports = {
     },
 
     addPokemon: (req, res) => {
-        const {name, lvl, hp, attack} = req.body
-
+        let {name, lvl, hp, attack, sprite} = req.body
+        if(!sprite){
+            sprite = 'http://www.pokestadium.com/sprites/black-white/animated/gengar.gif'
+        }
         const newPokemon = {
             id,
             lvl,
             name,
             hp,
             attack,
-            
+            sprite,
         }
 
         pokemon.push(newPokemon)

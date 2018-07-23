@@ -1,37 +1,244 @@
 .App {
-  text-align: center;
-  background-color: blueviolet
+    background-color: rgba(244, 228, 245, 0.808);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App-Header-Container {
+    
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    height: 25vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.Create-Pokemon-Container {
+    
+    height: 25vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
-.App-title {
-  font-size: 1.5em;
+.Display-All-Pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.Display-Pokemon-Container {
+    
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.App-intro {
-  font-size: large;
+.Battle-Container {
+    
+    height: 60vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* ---- */
+
+
+ .Create-Pokemon-Container-Header {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        width: 20%;
+        height: 50px;
+        
+
+    }
+
+.Red-Sprite {
+    height: 100px;
+    width: 100px;
+}
+
+.Welcome-Text-Box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+
 }
 
 .Welcome {
-  color: blue;
+    -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: blue;
+   color: yellow;
+   font-size: 50px;
 }
 
-.blue-picture-back {
-  background-color: blue;
+.Defeat-Text {
+    -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: blue;
+   color: yellow;
 }
+
+.Welcome-Text-Box-Top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.Create-Add-Pokemon-Fullbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 2px solid black;
+    height: 150px;
+    
+    background-color: rgba(241, 67, 67, 0.973)
+}
+
+.Create-Pokemon-Minibox {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.Add-New-Pokemon-Field {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid rgb(235, 226, 226);
+    background-color: white
+}
+
+.Pokemon-Icon-Field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Poke-Icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------ */
+
+.Poke-Stats-Whole-Field {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Poke-Stats-Full-Container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 20px;
+    border: 3px solid blue;
+    background-color: rgb(255, 255, 164);
+    
+}
+
+
+.Poke-Stats-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Poke-Stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Update-Poke-Stats {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----- */
+
+.Battle-Background-Container {
+    display: flex;
+    background: url('https://orig00.deviantart.net/4319/f/2011/190/9/a/free_pokemon_battle_template_by_peregrinestar-d3lijek.png');
+    width: 30%;
+    height: 60%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.Battle-Background-Container-Top {
+    
+    height: 100px;
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.Battle-Background-Container-Mid {
+    
+    height: 100px;
+    width: 100%;
+}
+
+.BBC-Bottom-Sq {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+    
+}
+.Battle-Button {
+    font-size: 26px;
+    padding: 20px 60px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.Battle-Pikachu-Sprite{
+    padding-right: 25%;
+    height: 70px;
+    width: 70px;
+}
+
+.Battle-Gengar-Sprite{
+    height: 120px;
+    width: 120px;
+    
+    padding-left: 10%;
+}
+
